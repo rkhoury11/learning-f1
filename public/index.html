@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/rfavicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/rfavicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,12 +22,13 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+  <title>React App</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -39,5 +38,118 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+  <!-- <h1>Regular Function</h1>
+
+  <p>The <strong>this</strong> keyword represents different objects depending on how the function was called.</p>
+
+  <button id="btn">Click Me!</button>
+
+  <p><strong>this</strong> represents:</p>
+
+  <p>See the difference before and after the button is clicked.</p>
+
+  
+    class Header {
+      constructor() {
+        this.color = "Red";
+      }
+
+      changeColor = () => {
+        document.getElementById("demo").innerHTML += this;
+      }
+    }
+
+    const myheader = new Header();
+
+    //The window object calls the function:
+    window.addEventListener("load", myheader.changeColor);
+
+    //A button object calls the function:
+    document.getElementById("btn").addEventListener("click", myheader.changeColor); -->
+
+  <!-- // const assigns a constant reference to a value. It does not assign a constant value to the variable.
+    // var has a function scope, not a block scope. -->
+  <!-- <p id="demo"></p> -->
+  <script>
+    // function calculate(a, b) {
+    //   const add = a + b;
+    //   const subtract = a - b;
+    //   const multiply = a * b;
+    //   const divide = a / b;
+
+    //   return [add, subtract, multiply, divide];
+    // }
+
+    // const [add, subtract, multiply, divide] = calculate(14, 7);
+
+    // document.write("<p>Sum: " + add + "</p>");
+    // document.write("<p>Difference " + subtract + "</p>");
+    // document.write("<p>Product: " + multiply + "</p>");
+    // document.write("<p>Quotient " + divide + "</p>");
+    // const vehicleOne = {
+    //   brand: 'Ford',
+    //   model: 'Mustang',
+    //   type: 'car',
+    //   year: 2021,
+    //   color: 'red'
+    // }
+
+    // myVehicle(vehicleOne);
+
+    // function myVehicle({ type, color, brand, model }) {
+    //   const message = 'My ' + type + ' is a ' + color + ' ' + brand + ' ' + model + '.';
+
+    //   document.getElementById("demo").innerHTML = message;
+    // }
+    // const vehicleOne = {
+    //   brand: 'Ford',
+    //   model: 'Mustang',
+    //   type: 'car',
+    //   year: 2021,
+    //   color: 'red',
+    //   registration: {
+    //     city: 'Houston',
+    //     state: 'Texas',
+    //     country: 'USA'
+    //   }
+    // }
+
+    // myVehicle(vehicleOne)
+
+    // function myVehicle({ model, registration: { state } }) {
+    //   const message = 'My ' + model + ' is registered in ' + state + '.';
+    // }
+
+    // document.getElementById("demo").textContent = message;
+    // const numbersOne = [1, 2, 3];
+    // const numbersTwo = [4, 5, 6];
+    // const numbersCombined = [...numbersOne, ...numbersTwo];
+
+    // document.write(numbersCombined);
+    // import { name, age } from "./person.js";
+    // import message from "./message.js";
+
+    // document.getElementById("demo").innerHTML = "My name is " + name;
+    // document.getElementById("demo").innerHTML += ", I am " + age + ".";
+
+    // document.getElementById("demo").innerHTML = message();
+
+  //   function renderApp () {
+  //     document.getElementById("root").innerHTML = "Welcome!";
+  //   }
+
+  //   function renderLogin() {
+  //     document.getElementById("root").innerHTML = "Please log in!";
+  //   }
+
+  //   let authenticated = false;
+
+  //   authenticated ? renderApp() : renderLogin();
+
+
+
+  </script>
+
+</body>
+
 </html>
